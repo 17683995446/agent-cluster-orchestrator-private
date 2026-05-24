@@ -1,0 +1,64 @@
+Collecting fastapi==0.115.0 (from -r requirements.txt (line 1))
+  Downloading fastapi-0.115.0-py3-none-any.whl.metadata (27 kB)
+Collecting uvicorn==0.32.0 (from uvicorn[standard]==0.32.0->-r requirements.txt (line 2))
+  Downloading uvicorn-0.32.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting pydantic==2.10.0 (from -r requirements.txt (line 3))
+  Downloading pydantic-2.10.0-py3-none-any.whl.metadata (167 kB)
+Collecting pydantic-settings==2.6.0 (from -r requirements.txt (line 4))
+  Downloading pydantic_settings-2.6.0-py3-none-any.whl.metadata (3.5 kB)
+Collecting sqlalchemy==2.0.36 (from sqlalchemy[asyncio]==2.0.36->-r requirements.txt (line 5))
+  Downloading SQLAlchemy-2.0.36-py3-none-any.whl.metadata (9.7 kB)
+Collecting asyncpg==0.30.0 (from -r requirements.txt (line 6))
+  Downloading asyncpg-0.30.0.tar.gz (957 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 957.7/957.7 kB 7.2 MB/s  0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting alembic==1.14.0 (from -r requirements.txt (line 7))
+  Downloading alembic-1.14.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting python-dotenv==1.0.1 (from -r requirements.txt (line 8))
+  Downloading python_dotenv-1.0.1-py3-none-any.whl.metadata (23 kB)
+Collecting httpx==0.28.1 (from -r requirements.txt (line 9))
+  Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting openai==1.57.0 (from -r requirements.txt (line 10))
+  Downloading openai-1.57.0-py3-none-any.whl.metadata (24 kB)
+Collecting anthropic==0.38.0 (from -r requirements.txt (line 11))
+  Downloading anthropic-0.38.0-py3-none-any.whl.metadata (21 kB)
+Collecting redis==5.2.0 (from -r requirements.txt (line 12))
+  Downloading redis-5.2.0-py3-none-any.whl.metadata (9.1 kB)
+Collecting celery==5.4.0 (from -r requirements.txt (line 13))
+  Downloading celery-5.4.0-py3-none-any.whl.metadata (21 kB)
+Collecting structlog==24.4.0 (from -r requirements.txt (line 14))
+  Downloading structlog-24.4.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting python-json-logger==2.0.7 (from -r requirements.txt (line 15))
+  Downloading python_json_logger-2.0.7-py3-none-any.whl.metadata (6.5 kB)
+Collecting prometheus-client==0.21.0 (from -r requirements.txt (line 16))
+  Downloading prometheus_client-0.21.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting PyYAML==6.0.2 (from -r requirements.txt (line 17))
+  Downloading pyyaml-6.0.2.tar.gz (130 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting PyJWT==2.9.0 (from -r requirements.txt (line 18))
+  Downloading PyJWT-2.9.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting python-multipart==0.0.19 (from -r requirements.txt (line 19))
+  Downloading python_multipart-0.0.19-py3-none-any.whl.metadata (1.8 kB)
+Collecting sentry-sdk==2.18.0 (from -r requirements.txt (line 20))
+  Downloading sentry_sdk-2.18.0-py2.py3-none-any.whl.metadata (9.9 kB)
+Collecting ruff==0.6.5 (from -r requirements.txt (line 21))
+  Downloading ruff-0.6.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (25 kB)
+Collecting psutil==6.1.1 (from -r requirements.txt (line 22))
+  Downloading psutil-6.1.1-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (22 kB)
+Collecting sentence-transformers==3.3.1 (from -r requirements.txt (line 25))
+  Downloading sentence_transformers-3.3.1-py3-none-any.whl.metadata (10 kB)
+ERROR: Could not find a version that satisfies the requirement torch==2.5.1 (from versions: 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0)
+
+[notice] A new release of pip is available: 26.0.1 -> 26.1.1
+[notice] To update, run: pip install --upgrade pip
+ERROR: No matching distribution found for torch==2.5.1

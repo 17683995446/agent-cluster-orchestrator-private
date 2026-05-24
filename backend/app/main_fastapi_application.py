@@ -4,11 +4,10 @@ from fastapi.responses import JSONResponse
 from contextlib import asynccontextmanager
 import time
 from app.application_configuration import settings
-from app.core.structured_logging_config import logger, setup_logging
-from app.core.enhanced_exception_handler import (
-    AgentClusterException,
-    register_exception_handlers
-)
+from app.core.logging import get_application_logger, setup_simple_logging
+from app.core.exceptions import AgentClusterException
+from app.core.enhanced_exception_handler import register_exception_handlers
+from app.compatibility import get_logger
 from app.database_connection_manager import init_db, close_db
 from app.api.v1 import (
     agent_management_endpoints,
@@ -22,7 +21,7 @@ from app.api import api_documentation
 from app.observability.opentelemetry_tracing import setup_telemetry
 from prometheus_client import Counter, Histogram, generate_latest, CONTENT_TYPE_LATEST
 
-setup_logging(settings.LOG_LEVEL, settings.LOG_FORMAT)
+setup_simple_logging(settings.LOG_LEVEL, settings.LOG_FORMAT)
 
 REQUEST_COUNT = Counter(
     "http_requests_total",

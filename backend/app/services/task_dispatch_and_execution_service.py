@@ -9,7 +9,7 @@ from app.schemas.task_api_schemas import TaskCreate, ClusterExecuteRequest
 from app.repositories.task_persistence_repository import TaskRepository
 from app.repositories.agent_persistence_repository import AgentRepository
 from app.llm.llm_provider_manager import llm_manager
-from app.core.custom_exceptions_handler import TaskNotFoundError, AgentNotFoundError
+from app.core.exceptions import TaskNotFoundError, AgentNotFoundError
 import structlog
 import time
 

@@ -5,7 +5,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.models.agent_data_model import Agent, AgentStatus
 from app.schemas.agent_api_schemas import AgentCreate, AgentUpdate
 from app.repositories.agent_persistence_repository import AgentRepository
-from app.core.custom_exceptions_handler import AgentNotFoundError
+from app.core.exceptions import AgentNotFoundError
 import structlog
 
 logger = structlog.get_logger()
